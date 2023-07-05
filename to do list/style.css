@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom:20px ;
+    font-family:"lobster"
+}
+
+body {
+    height: 100vh;
+    background-color: #243c5a;
+  }
+  
+  
+
+.container {
+    position: relative;
+    max-width: 800px;
+    padding: 15px;
+    margin: 0 auto;
+    background: linear-gradient(120deg, #5F27CD, #FF3F80, #00B0FF);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.addTask {
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+}
+
+.addTask>input[type="text"] {
+    width: 100%;
+    color: rgb(3, 2, 3);
+    border: aliceblue;
+    border-bottom: 2px solid rgb(37, 19, 19);
+    background: transparent;
+    padding: 10px;
+    font-size: 35px;
+    box-shadow: darkgrey;
+    outline: none;
+}
+
+.addTask button {
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(2, 14, 14);
+    color: rgb(212, 200, 200);
+    padding: 10px;
+    border: rgb(173, 7, 71);
+    outline: rgb(2, 94, 148);
+    border-radius: 5px;
+    box-shadow: -7px -7px 10px rgba(56, 65, 73, 0.897), 5px 5px 15px rgba(247, 242, 242, 0.966);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+.notcompleted{
+    float: left;
+    margin: 5px 0;
+    padding: 18px;
+    
+}
+.completed {
+    float: right;
+    margin: 5px 0;
+    padding: 18px;
+}
+
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+    text-decoration: wavy;
+    text-transform: uppercase;
+    color: rgba(9, 9, 14, 0.89);
+    font-family:"lobster" ;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: my-counter;
+}
+
+ol li {
+    width: 100%;
+    padding: 18px;
+    margin: 5px 0;
+    background: transparent;
+    font-size: 23px;
+    counter-increment: my-counter;
+    border-radius: 15px;
+    font-family:'Montserrat';
+    color: #e6e5e5; 
+  }
+  
+ol.completed li {
+    background: transparent;
+}
+
+ol li::before {
+    content: counter(my-counter);
+    color: rgb(8, 7, 14);
+    padding: 8px;
+    width: 3rcm;
+    height: 3cm;
+    line-height: 3rcm;
+    margin-right: 0.5rcm;
+    border-radius: 35%;
+    background-color: transparent;
+}
+
+li button {
+    float: right;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 23px;
+    margin-right: 13px;
+    background-color: darksalmon;
+    background: none;
+    border: bisque;
+    outline: 5px;
+    outline-color: aliceblue;
+    outline-width: 10px;
+    cursor: pointer;
+}
